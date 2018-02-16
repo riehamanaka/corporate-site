@@ -23,17 +23,24 @@ header{
         padding-bottom: 4px;
     }
     
-    @media (max-width: 550px){
-        .logo{
-            width: 190px;
-        }
-        
-        .navi{
-            width: 40px;
-            float: right;
+        @media (max-width: 550px){
+           .logo{
+               width: 190px;
         }
     }
     
+    h1 {
+    margin: 0;
+    padding: 0;
+    }    
+    
+    @media (max-width: 550px){
+      .navi{
+          width: 40px;
+          float: right;
+      }
+    }
+
     .sp_navi_li{
         width: 180px;
         position: absolute;
@@ -46,11 +53,10 @@ header{
         display: none;
         z-index: 100;
         
-    li{
-        
-        list-style: none;
-        margin: 0;
-        padding: 0;
+      li {
+          list-style: none;
+          margin: 0;
+          padding: 0;
         
         a{
             display: block;
@@ -59,9 +65,13 @@ header{
             @include fontsize(14);
             text-decoration: none;
         }
+        //a
       }
+      //li
     }
-    @media (min-width: 551px) {
+    //.sp_navi_li
+    
+    @media (min-width: 550px) {
         .sp_navi{
             display: none;
         }
@@ -69,6 +79,7 @@ header{
         #header_in{
             padding: 15px 0 10px 0;
         }
+    
         
         .pc_navi_li{
             margin: 0;
@@ -87,12 +98,15 @@ header{
                     float: left;
                     padding-right: 10px;
                 }
+                //a
                 
                 a:hover{
                     color: $blue1;
                 }
+                //a hover
             }
-            
+            //li
+                
             li.navi_toppage a{
                 background-repeat:no-repeat;
                 display: inline-block;
@@ -105,9 +119,10 @@ header{
                 @media screen and (-webkit-min-device-pixel-ratio:2),
                                   (min-resolution: 2dppx){
                     background-image:url("../images/top/navi_news@2x.png");
-                                  }
+                    }
             }
-            
+            //li.navi_toppage a    
+           
             li.navi_news a{
                 background-repeat: no-repeat;
                 display: inline-block;
@@ -122,6 +137,7 @@ header{
                     background-image: url("../images/top/navi_news@2x.png");
                                   }
             }
+            //li.navi_news_a
             
             li.navi_company a{
                 background-repeat:no-repeat;
@@ -137,16 +153,20 @@ header{
                     backgound-image: url("../images/top/navi_company@2x.png");
                                   }
             }
-            
+           //li.navi_conpany. a
+      
         }
-        
+        //pc_navi li   
     }
+    
     @media (max-width: 550px){
         .pc_navi{
             display: none;
         }
     }
+   //media (max-wiidth: 550px)
 }
+//header
 
 #cover_area{
     
@@ -469,18 +489,14 @@ h1{
     @media (min-width: 550px){
         padding-right: 20px;
     }
-   th{
-    padding-right: 20px;
-    padding: 20px 0;
-    color: #626262;
-    font-size: 14px;
-    font-size: 1.4rem;
-    }
-   td{
+    th,td{
         padding: 20px 0;
         color: #626262;
         font-size: 14px;
         font-size: 1.4rem;
+    }
+     th{
+    padding-right: 20px;
     }
   }
   //#main

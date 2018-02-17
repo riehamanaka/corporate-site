@@ -69,7 +69,7 @@ header {
         background-size: 40px 40px; } }
     @media screen and (min-width: 550px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 550px) and (min-resolution: 2dppx) {
       header .pc_navi_li li.navi_toppage a {
-        background-image: url("../images/top/navi_news@2x.png"); } }
+        background-image: url("../images/top/navi_top@2x.png"); } }
   @media (min-width: 550px) {
       header .pc_navi_li li.navi_news a {
         background-repeat: no-repeat;
